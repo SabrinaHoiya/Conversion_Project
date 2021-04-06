@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/con"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion de Monnaie "
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="315dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monnaie"
+        app:layout_constraintVertical_bias="0.142">
+
+        <RadioButton
+            android:id="@+id/conv1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:buttonTint="#FFFFFF"
+            android:text="Euro ==> Dinar Tunisien"
+            android:textColor="#000000"
+            android:textColorHint="#E91E63"
+            android:textSize="26sp"
+            app:buttonTint="#E91E63" />
+
+        <RadioButton
+            android:id="@+id/conv2"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:buttonTint="#FFFFFF"
+            android:text="Dinar Tunisien ==> Euro"
+            android:textColor="#000000"
+            android:textColorLink="#E91E63"
+            android:textSize="26sp"
+            app:buttonTint="#E91E63" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="197dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="132dp"
+        android:shadowColor="#9C27B0"
+        android:text="Convertir.."
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#9C27B0"
+        app:strokeColor="#9C27B0" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="253dp"
+        android:layout_height="93dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertir"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <EditText
+        android:id="@+id/monnaie"
+        android:layout_width="345dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Monnaie à convertir"
+        android:inputType="number"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#E91E63"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.034" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
